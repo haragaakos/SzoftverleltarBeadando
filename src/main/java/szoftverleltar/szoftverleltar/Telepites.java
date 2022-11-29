@@ -1,9 +1,13 @@
-package com.szoftverleltar;
+package szoftverleltar.szoftverleltar;
 
-import javax.persistence.Column;
+import javax.persistence.*;
 import java.util.Date;
-
+@Entity
+@Table(name = "telepites")
 public class Telepites {
+
+    @Id
+    @GeneratedValue
     @Column(name = "id")
     public int Id;
     @Column(name = "gepid")
@@ -16,6 +20,10 @@ public class Telepites {
     public Date Datum;
 
     public Telepites(int gepid, int szoftverid, String verzio, Date datum) {
+    }
+
+    public Telepites() {
+
     }
 
     public int getId() {

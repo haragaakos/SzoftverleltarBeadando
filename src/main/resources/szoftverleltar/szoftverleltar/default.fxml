@@ -11,8 +11,8 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TableView?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.szoftverleltar.AdatbazisController">
+<VBox fx:id="vBox" alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="szoftverleltar.szoftverleltar.AdatbazisController">
     <MenuBar fx:id="menubar">
         <Menu fx:id="adatbazis" text="Adatbázis">
             <MenuItem fx:id="olvas" text="Olvas" onAction="#onOlvasMenuItemClick"></MenuItem>
@@ -22,8 +22,8 @@
             <MenuItem fx:id="torol" text = "Töröl"></MenuItem>
         </Menu>
     </MenuBar>
-    <Label fx:id="action_result">Üzenet</Label>
-    <GridPane fx:id="telepites_gp" hgap="2" vgap="4">
+    <Label fx:id="action_result" visible="false">Üzenet</Label>
+    <GridPane fx:id="telepites_gp" visible="false" hgap="2" vgap="4">
         <Label GridPane.rowIndex="1" GridPane.columnIndex="0">Gép:</Label>
         <TextField fx:id="tGép" GridPane.rowIndex="1" GridPane.columnIndex="1"></TextField>
         <Label GridPane.rowIndex="2" GridPane.columnIndex="0">com.szoftverleltar.Szoftver:</Label>
@@ -33,7 +33,7 @@
         <Label GridPane.rowIndex="4" GridPane.columnIndex="0">Dátum:</Label>
         <TextField fx:id="tDatum" GridPane.rowIndex="4" GridPane.columnIndex="1"></TextField>
 
-        <Button onAction="#OnCreateTelepites" GridPane.rowIndex="0" GridPane.columnIndex="1" >Küldés</Button>
+        <Button onAction="#OnCreateTelepites" visible="false" GridPane.rowIndex="0" GridPane.columnIndex="1" >Küldés</Button>
     </GridPane>
     <TableView fx:id="tv1" >
     </TableView>

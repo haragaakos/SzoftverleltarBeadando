@@ -1,4 +1,4 @@
-package com.szoftverleltar;
+package szoftverleltar.szoftverleltar;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

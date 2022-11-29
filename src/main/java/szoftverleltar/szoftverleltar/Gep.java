@@ -1,7 +1,5 @@
-package com.szoftverleltar;
-
-import org.hibernate.annotations.Entity;
-import org.hibernate.annotations.Table;
+package szoftverleltar.szoftverleltar;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "gep")
