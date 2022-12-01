@@ -88,7 +88,7 @@ public class TelepitesController {
         for(Dolgozó dolgozó:lista)
             tv1.getItems().add(dolgozó);
         System.out.println();
-        t.commit();*/
+        t.commit(to);*/
     }
     @FXML protected void menuUpdateClick() {}
     @FXML protected void menuDeleteClick() {}
